@@ -1,0 +1,40 @@
+#container{
+    display: grid;
+    grid-template-columns: 200px 4fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: 
+    "area1 footer footer"
+    "area2 nav nav"
+    "area3 aside aside"
+    "area4 header header";
+}
+
+nav{
+    grid-area: area2;
+    background-color: blue;
+    color: blanchedalmond;
+}
+header{
+    grid-area: area4;
+    background-color:brown;
+}
+
+aside{
+    grid-area: area3;
+    background-color: green;
+}
+
+footer{
+    grid-area: area1;
+    background-color: darkkhaki;
+}
+
+article{
+    grid-area: article;
+    background-color: bisque;
+}
+#image_article{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
